@@ -14,6 +14,14 @@
     box-sizing: border-box;
 }
 
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
 body{
     background-image: url(https://github.com/JPLabussiereF/UJ-EC-Helper/blob/main/assets/images/background-home.jpg?raw=true);
     background-repeat: no-repeat;
@@ -81,33 +89,84 @@ body{
     border-radius: 0 0 4rem 4rem;
 }
 
+/* ---------------------------NAV--------------------------- */
+
+nav#teste::after{
+    content: '';
+    margin-left: 5.5rem;
+    width: 10px;
+    background-color: #E2DFD0c9;
+    height: 650px;
+    position: fixed;
+}
+
+#teste{
+    position: fixed;
+    padding-top: 8rem;
+    padding-left: 2rem;
+    font-family: var(--texto-font);
+    color: var(--secondary-color);
+    font-size: 1rem;
+}
+
+#teste ul{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 0.5rem;
+    background-color: #E2DFD0c9;
+    padding: 1rem;
+    border-radius: 1rem 2rem 2rem;
+}
+
+#teste ul a{
+    color: var(--secondary-color);
+
+}
+
 /* ---------------------------Main--------------------------- */
 
 .apresentacao_conteudo{
     display: flex;
-    flex-direction: row;
-    align-items: right;
-    justify-content: space-between;
-    padding: 2rem 16rem;
-    gap: 2rem;
-}
-
-.apresentacao_conteudo div{    
-    display: flex;
     flex-direction: column;
-    gap: 1.25rem;
-    color: var(--secondary-color);
-    background-color: #E2DFD0c9;
-    padding: 2rem;
-    border-radius: 0.625rem;
-    width: 90% 10%;
+    justify-content: space-between;
+    padding: 2rem 16rem 5rem 16rem;
+    gap: 2rem;
 }
 
 .apresentacao_conteudo_titulo{
     font-size: 2.5rem;
     font-family: var(--titulo-font);
+    color: var(--secondary-color);
     font-weight: bold;
     align-self: center;
+    padding: 0.25rem;
+}
+
+.apresentacao_conteudo_titulo:after{
+    content: '';
+    display: block;
+    height: 0.25rem;
+    background-color: var(--secondary-color);
+    border-radius: 0 0 4rem 4rem;
+}
+
+.apresentacao_conteudo .apresentacao_conteudo_disciplina{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: var(--secondary-color);
+    background-color: #E2DFD0c9;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+
+.apresentacao_conteudo h4{
+    color: var(--secondary-color);
+    font-family: var(--texto-font);
+    font-size: 1.5rem;
 }
 
 .apresentacao_conteudo_texto{
@@ -115,17 +174,44 @@ body{
     font-family: var(--texto-font);
 }
 
+.apresentacao_conteudo_disciplina_img{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 1.25rem;
+}
+
+.apresentacao_conteudo_disciplina_img_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.apresentacao_conteudo_img{
+    width: 700px;
+    height: auto;
+    border-radius: 1rem 7rem 10rem 7rem ;
+}
+
+.link{
+    text-decoration: none;
+    font-family: var(--texto-font);
+}
+
+
 /* ---------------------------Footer--------------------------- */
 
 .rodape{
     display: flex;
     position: absolute;
-    bottom: 0;
+    bottom: end;
     width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #E2DFD0c9;
+    background-color: var(--main-color);
     padding: 0.625rem 16rem;
 }
 
@@ -137,4 +223,8 @@ body{
     font-family: var(--cabecalho-footer-font);
     color: #524C42;
     font-size: 1.25rem;
+}
+
+.small{
+    font-size: 0.75rem;
 }

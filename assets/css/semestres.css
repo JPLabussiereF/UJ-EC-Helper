@@ -15,7 +15,7 @@
 }
 
 body{
-    background-image: url(https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(https://github.com/JPLabussiereF/UJ-EC-Helper/blob/main/assets/images/background-semestres.jpg?raw=true);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -90,7 +90,7 @@ body{
     align-items: right;
     justify-content: space-between;
     padding: 2rem 16rem;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .apresentacao_conteudo div{    
@@ -105,9 +105,9 @@ body{
 
 .apresentacao_conteudo div a{
     color: var(--secondary-color);
-    font-size: 1.25rem;
+    font-family: var(--texto-font);
+    font-size: 1rem;
     text-decoration: none;
-
 }
 
 .apresentacao_conteudo_titulo{
@@ -115,11 +115,6 @@ body{
     text-align: center;
     font-family: var(--titulo-font);
     font-weight: bold;
-}
-
-.apresentacao_conteudo_texto{
-    font-size: 1.25rem;
-    font-family: var(--texto-font);
 }
 
 /* ---------------------------Footer--------------------------- */
@@ -132,7 +127,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #524C42a9;
+    background-color: var(--main-color);
     padding: 0.625rem 16rem;
 }
 
@@ -142,6 +137,6 @@ body{
     gap: 0.5rem;
     align-items: center;
     font-family: var(--cabecalho-footer-font);
-    color: var(--main-color);
+    color: #524C42;
     font-size: 1.25rem;
 }
