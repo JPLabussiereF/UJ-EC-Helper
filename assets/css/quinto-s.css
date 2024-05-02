@@ -228,3 +228,8 @@ nav#teste::after{
 .small{
     font-size: 1rem;
 }
+
+.small a{
+    font-family: var(--cabecalho-footer-font);
+    color: #524C42;
+}
